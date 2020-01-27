@@ -1,0 +1,67 @@
+.App {
+    background-color:#f4f5f7;
+}
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.cud-white {
+    background-color:rgb(255,255,255) !important;
+}
+.cud-light-gray {
+    background-color:rgb(200,200,203) !important;
+}
+.cud-gray {
+    background-color:rgb(132,145,158) !important;
+}
+.cud-black {
+    background-color:rgb(0,0,0) !important;
+}
+.cud-light-pink {
+    background-color:rgb(255,202,191) !important;
+}
+.cud-cleam {
+    background-color:rgb(255,255,128) !important;
+}
+.cud-yellow-green {
+    background-color:rgb(216,242,85) !important;
+}
+.cud-light-sky-blue {
+    background-color:rgb(191,228,255) !important;
+}
+.cud-beige {
+    background-color:rgb(255,202,128) !important;
+}
+.cud-light-green {
+    background-color:rgb(119,217,168) !important;
+}
+.cud-light-violet {
+    background-color:rgb(201,172,230) !important;
+}
+.cud-red {
+    background-color:rgb(255,75,0) !important;
+}
+.cud-yellow {
+    background-color:rgb(255,241,0) !important;
+}
+.cud-green {
+    background-color:rgb(3,175,122) !important;
+}
+.cud-blue {
+    background-color:rgb(0,90,255,) !important;
+}
+.cud-sky-blue {
+    background-color:rgb(77,196,255) !important;
+}
+.cud-pink {
+    background-color:rgb(255,128,130) !important;
+}
+.cud-orange {
+    background-color:rgb(246,170,0) !important;
+}
+.cud-violet {
+    background-color:rgb(153,0,153) !important;
+}
+.cud-brown {
+    background-color:rgb(128,64,0) !important;
+}
