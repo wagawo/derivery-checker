@@ -33,6 +33,18 @@ class Base extends React.Component
         this.setState({filter: filter});
     }
 
+    resetFilter = () => {
+        const filter = {
+            from: "0",
+            to: "0",
+            maxLike: 0,
+            amount: false,
+            safety: false,
+            speed: false,
+            hiddenCleared: false,
+        };
+        this.setState({filter: filter})
+    }
     render() {
         return (
             <Container>
@@ -48,7 +60,7 @@ class Base extends React.Component
                 </Row>
                 <Row>
                     <Col>
-                        <Filter facilities={facilities.data} filtered={this.state.filter} onChange={this.updateFormData.bind(this)}/>
+                        <Filter facilities={facilities.data} filtered={this.state.filter} onChange={this.updateFormData.bind(this)} resetFilter={this.resetFilter.bind(this)}/>
                     </Col>
                 </Row>
                 <Row>
