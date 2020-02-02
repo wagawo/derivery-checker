@@ -13,7 +13,6 @@ class Base extends React.Component
             filter: {
                 from: "0",
                 to: "0",
-                maxLike: 0,
                 amount: false,
                 safety: false,
                 speed: false,
@@ -33,16 +32,23 @@ class Base extends React.Component
         this.setState({filter: filter});
     }
 
+    /**
+     * フィルター条件の初期化
+     */
     resetFilter = () => {
         const filter = {
             from: "0",
             to: "0",
-            maxLike: 0,
             amount: false,
             safety: false,
             speed: false,
             hiddenCleared: false,
         };
+        // フォームアイテムの初期化
+        Object.keys(filter).map((value, index) => {
+            const element = document.querySelector("[name="+value+"]");
+            (element.type === 'checkbox') ? element.checked = filter[value] : element.value = filter[value];
+        });
         this.setState({filter: filter})
     }
     render() {
