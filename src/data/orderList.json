@@ -645,7 +645,7 @@
         "name": "［壊れもの］強そうな大型機械の模型を壊さずに届けろ",
         "from": 6,
         "to": 1,
-        "max_likes": 529,
+        "max_likes": 29,
         "amount": 0,
         "safety": 1,
         "speed": 0
@@ -4655,7 +4655,7 @@
         "name": "熱伝導率が桁違いのカイラル結晶制特注調理器具を届けろ",
         "from": 24,
         "to": 34,
-        "max_likes": 1224,
+        "max_likes": 29,
         "amount": 0,
         "safety": 1,
         "speed": 0
