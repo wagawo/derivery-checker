@@ -108,7 +108,6 @@ const OrderDetail = (props) => {
         {(order.safety === 1)&&<FontAwesomeIcon icon={faHands} />}
         {(order.speed === 1)&&<FontAwesomeIcon icon={faStopwatch} />}
       </td>
-      <td className="orderName text-left">{order.name}</td>
       <td className="faciliryName text-left from">{facilities[order.from].name}</td>
       <td className="faciliryName text-left from">{facilities[order.to].name}</td>
       <td>{order.max_likes}</td>
