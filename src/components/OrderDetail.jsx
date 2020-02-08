@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBoxes, faHands, faStopwatch } from '@fortawesome/free-solid-svg-icons'
 /**
  * 依頼リスト明細部
  * @param {*} props
@@ -101,6 +102,12 @@ const OrderDetail = (props) => {
     <tr className={(clearedCheck()) +  (hiddenFilter())} data-id={order.id} data-amount={order.amount} data-safety={order.safety} data-speed={order.speed}>
       <td><Form.Check name="cleared" data-orderid={order.id} defaultChecked={isChecked()} onChange={(e) => {onChange(e)}}/></td>
       <td className="orderId">{order.id}</td>
+      <td className="orderName text-left">
+        {order.name}
+        {(order.amount === 1)&&<FontAwesomeIcon icon={faBoxes} />}
+        {(order.safety === 1)&&<FontAwesomeIcon icon={faHands} />}
+        {(order.speed === 1)&&<FontAwesomeIcon icon={faStopwatch} />}
+      </td>
       <td className="orderName text-left">{order.name}</td>
       <td className="faciliryName text-left from">{facilities[order.from].name}</td>
       <td className="faciliryName text-left from">{facilities[order.to].name}</td>
