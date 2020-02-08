@@ -65,3 +65,8 @@ input[type="checkbox"] {
 .cud-brown {
     background-color:rgb(128,64,0) !important;
 }
+.fa-boxes,
+.fa-hands,
+.fa-stopwatch {
+    margin-left: 0.25rem;
+}
